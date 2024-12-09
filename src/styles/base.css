@@ -105,3 +105,12 @@
   font-weight: 200 900; /* Variable font supporting a range of weights */
   font-style: normal;
 }
+
+html {
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
