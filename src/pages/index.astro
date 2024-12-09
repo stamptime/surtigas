@@ -1,22 +1,23 @@
 ---
 // import Commercial from '@/components/sections/Commercial.astro';
-// import Financial from '@/components/sections/Financial.astro';
-import Hero from '@/components/sections/Hero.astro';
-import Management from '@/components/sections/Management.astro';
-// import mobiletopups from '@/components/sections/mobiletopups.astro';
+import Financial from "@/components/sections/Financial.astro";
+import Hero from "@/components/sections/Hero.astro";
+import Management from "@/components/sections/Management.astro";
+import MobileTopups from "@/components/sections/MobileTopups.astro";
 // import operations from '@/components/sections/operations.astro';
-import Layout from '@/layouts/Layout.astro';
-import '@/styles/base.css'
+import Layout from "@/layouts/Layout.astro";
+import "@/styles/base.css";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Hero  />
-	<Management />
-	<!-- <MobileTopups client:visible />
-	<Financial client:visible/>
+  <Hero />
+  <Management />
+  <MobileTopups />
+  <Financial />
+  <!-- 
 	<Commercial client:visible/>
 	<Operations client:visible/> -->
 </Layout>
