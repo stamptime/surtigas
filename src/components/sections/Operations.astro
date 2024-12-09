@@ -13,7 +13,7 @@ import dashedLineYellow from '@public/assets/dashed-line-yellow.svg';
 import dashedCurvedBlueLine from '@public/assets/dashed-curved-blue-line.svg';
 import MotionNumber from '../ui/MotionNumber';
 ---
-<section data-aos="fade-right" data-aos-delay="600" class="container grid place-items-center max-w-4xl text-nowrap gap-8 mx-auto">
+<section data-aos="fade-right" data-aos-delay="1200" class="container grid place-items-center max-w-4xl text-nowrap gap-8 mx-auto">
     <img src={operationsTitle.src} alt="Operations title" class="w-[550px] pb-10 mb-20"/>
     <div class="grid grid-cols-2 place-content-between">
         <div class="grid gap-3">
@@ -65,13 +65,13 @@ import MotionNumber from '../ui/MotionNumber';
             <img src={document.src} alt="Document image" class="w-[120px]"/>
             <Typography as="h1" class="text-yellow text-4xl">
                 <span class="text-[90px]">
-                <MotionNumber from={10} to={80} duration={2} client:only/>%</span><br/>
+                <MotionNumber from={0} to={80} duration={2} client:only/>%</span><br/>
                 EJECUCIÓN
             </Typography>
         </div>
     </div>
 </section>
-<section data-aos="fade-right" data-aos-delay="600" class="container grid place-items-center max-w-4xl text-nowrap gap-8 mx-auto">
+<section data-aos="fade-right" data-aos-delay="1200" class="container grid place-items-center max-w-4xl text-nowrap gap-8 mx-auto">
     <Typography as="h1" class="text-celeste text-center text-5xl/10 font-normal pb-[20px]">
         Bastón de <span class="text-orange text-6xl font-bold">PEALPE</span> <br/>
         en centros de <span class="text-6xl font-bold">medición</span>
@@ -101,7 +101,7 @@ import MotionNumber from '../ui/MotionNumber';
     <div class="grid place-items-center mt-16 gap-8 relative">
         <Typography as="h1" class="text-orange text-center text-5xl pb-7 relative">
             <span class="text-[120px]">
-                <MotionNumber from={80} to={50} duration={2} client:only/>%
+                <MotionNumber from={0} to={50} duration={2} client:only/>%
             </span><br/>
             EJECUCIÓN
             <img src={dashedBottomBlueLine.src} class="absolute top-36 -right-40 h-14 -rotate-90" alt="Dashed bottom blue line"/>
@@ -118,7 +118,7 @@ import MotionNumber from '../ui/MotionNumber';
         <img src={inbox.src} class="absolute -left-48 top-32 w-[150px]" alt="Documents inbox" />
     </div>
 </section>
-<section data-aos="fade-right" data-aos-delay="600" class="container grid place-items-center max-w-4xl text-nowrap gap-8 mx-auto relative">
+<section data-aos="fade-right" data-aos-delay="1200" class="container grid place-items-center max-w-4xl text-nowrap gap-8 mx-auto relative">
     <div class="place-self-end">
         <Typography as="h1" class="text-orange text-right text-[55px]/10 relative mb-8">
             Inteligencia Artificial <br/>
@@ -134,13 +134,13 @@ import MotionNumber from '../ui/MotionNumber';
     </div>
     <Typography as="h1" class="text-yellow text-4xl">
         <span class="text-[100px]">
-            <MotionNumber from={10} to={50} duration={2} client:only/>%
+            <MotionNumber from={0} to={50} duration={2} client:only/>%
         </span><br/>
         EJECUCIÓN
     </Typography>
     <img src={certification.src} class="absolute left-24 w-[150px]" alt="Document certificated" />
 </section>
-<section data-aos="fade-right" data-aos-delay="600" class="container grid place-items-center max-w-4xl text-nowrap gap-8 mx-auto relative">
+<section data-aos="fade-right" data-aos-delay="1200" class="container grid place-items-center max-w-4xl text-nowrap gap-8 mx-auto relative">
     <div class="place-self-start">
         <Typography as="h1" class="text-celeste text-left text-5xl font-light pb-5">
             Analítica de datos para <br/>
@@ -153,7 +153,7 @@ import MotionNumber from '../ui/MotionNumber';
             el uso de Power Bi.
         </Typography>
     </div>
-    <div data-aos="fade-down" data-aos-delay="600" class="relative h-[450px]">
+    <div data-aos="fade-down" data-aos-delay="1200" class="relative h-[450px]">
         <div class="place-self-end grid place-items-center gap-10 absolute -top-10">
             <div class="grid gap-2 relative">
                 <Typography as="p" class="font-black w-fit bg-celeste py-1 px-3 place-self-center rounded-full text-xl">Impacto</Typography>
@@ -169,7 +169,7 @@ import MotionNumber from '../ui/MotionNumber';
             <img src={analytics.src}  alt="Analytics"  class="w-[200px]"/>
             <Typography as="h1" class="text-celeste text-4xl">
                 <span class="text-[100px]">
-            <MotionNumber from={10} to={50} duration={2} client:only/>%
+            <MotionNumber from={0} to={50} duration={2} client:only/>%
                 </span><br/>
                 EJECUCIÓN
             </Typography>
@@ -177,7 +177,7 @@ import MotionNumber from '../ui/MotionNumber';
     </div>
     <img src={bulbBox.src} class="absolute left-0 -bottom-10 w-[250px]" alt="Bulb in a box" />
 </section>
-<section data-aos="fade-right" data-aos-delay="600" class="container grid place-items-center max-w-4xl text-nowrap gap-8 mx-auto relative">
+<section data-aos="fade-right" data-aos-delay="1200" class="container grid place-items-center max-w-4xl text-nowrap gap-8 mx-auto relative">
     <Typography as="h1" class="text-celeste text-center font-light mb-3 text-5xl/10">
         Herramienta para reporte del <br/>
         <span class="text-orange font-bold text-7xl">preoperacional</span> <br/>
@@ -193,10 +193,10 @@ import MotionNumber from '../ui/MotionNumber';
     </Typography>
     <div class="grid grid-cols-[1fr,10px,1fr] gap-10 place-items-center divide-yellow mt-10">
         <div class="grid place-items-center place-self-end gap-3 items-center">
-            <Typography as="h1" class="text-orange text-center text-[115px]/[2.5rem]">
-                <MotionNumber from={50} to={100} duration={2} client:only/>%
+            <Typography as="h1" class="text-orange text-center text-[115px]/[3rem]">
+                <MotionNumber from={0} to={100} duration={2} client:only/>%
                 <br/>
-                <span class="text-[43px]">EJECUCIÓN</span>
+                <span class="text-[54px]">EJECUCIÓN</span>
             </Typography>
         </div>
         <div class="bg-celeste w-[2px] h-[100px]"/>

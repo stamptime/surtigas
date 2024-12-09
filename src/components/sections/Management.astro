@@ -7,7 +7,7 @@ import MotionNumber from '../ui/MotionNumber'
 
 ---
 <section class="container text-nowrap grid text-left grid-cols-2 place-items-start gap-8 max-w-4xl mx-auto">
-    <div data-aos="fade-right" data-aos-delay="300" class="grid gap-6">
+    <div data-aos="fade-right" data-aos-delay="1200" class="grid gap-6">
         <div>
             <Typography as="h1" variant="primary" class="text-yellow">
             <span class="text-4xl">Eco cuadras: </span><br />
@@ -26,12 +26,12 @@ import MotionNumber from '../ui/MotionNumber'
         </Typography>
         <div class="grid grid-cols-2 gap-3 items-center">
             <Typography as="h1" class="text-yellow text-3xl/8">
-                <span class="text-[80px]"><MotionNumber from={30} to={50} duration={2} client:only />%</span><br/>
+                <span class="text-[80px]"><MotionNumber from={0} to={50} duration={2} client:only />%</span><br/>
                 EJECUCIÓN
             </Typography>
             <img id=".management-title" class="scale-150" src={managementTitle.src} alt={"Corporate Affairs Management"}/>
         </div>
     </div>
-    <img data-aos="fade-down" data-aos-delay="300" class="place-self-end" src={book.src} alt="Book" />
+    <img data-aos="fade-down" data-aos-delay="1200" class="place-self-end" src={book.src} alt="Book" />
 </section>
-<video data-aos="zoom-in" data-aos-delay="600" src={webAnimation} class="w-screen" autoplay loop muted/>
+<video data-aos="zoom-in" data-aos-delay="1200" src={webAnimation} class="w-screen" autoplay loop muted/>
