@@ -6,6 +6,7 @@ import document from '@public/assets/document.png'
 import Typography from '../ui/Typography.astro'
 import heroCloud from '@public/assets/hero-cloud.png'
 import MotionNumber from '../ui/MotionNumber'
+import dashedOrangeLine from '@public/assets/dashed-orange-line.svg';
 ---
 <section class="container grid max-w-4xl text-nowrap gap-20 mx-auto">
     <img data-aos="zoom-in" data-aos-delay="600" src={financialTitle.src} class="place-self-center" alt="Financial title"/>
@@ -42,8 +43,8 @@ import MotionNumber from '../ui/MotionNumber'
     </div>
 </section>
 <section class="container grid max-w-4xl text-nowrap gap-20 mx-auto relative">
-    <div data-aos="zoom-in" data-aos-delay="300" class="grid text-center gap-3">
-        <Typography as="h1" class="text-orange leading-snug text-5xl">
+    <div data-aos="zoom-in" data-aos-delay="300" class="grid text-center gap-3 relative">
+        <Typography as="h1" class="text-orange leading-snug text-5xl/9">
             <span class="text-celeste font-normal text-4xl">Optimización proceso de</span> <br/>
             Indexación masiva<br/> 
             <span class="font-light text-3xl text-celeste">en sistema</span> <span class="text-celeste">DocuWare</span></span>
@@ -54,11 +55,12 @@ import MotionNumber from '../ui/MotionNumber'
             como validación y microcolsa
         </Typography>
     </div>
-    <div data-aos="zoom-in" data-aos-delay="300" class="grid grid-cols-[1fr,0.5fr,1fr] gap-10 place-items-center divide-yellow">
+    <div data-aos="zoom-in" data-aos-delay="300" class="grid grid-cols-[1fr,0.5fr,1fr] relative gap-10 place-items-center divide-yellow">
         <div class="grid place-items-center place-self-end gap-3 items-center">
-            <Typography as="h1" class="text-orange text-[115px]/[2.5rem]">
+            <Typography as="h1" class="text-orange text-[115px]/[2.5rem] relative">
                 <MotionNumber from={46} to={70} duration={2} client:only />% <br/>
                 <span class="text-[43px]">EJECUCIÓN</span>
+                <img src={dashedOrangeLine.src} class="absolute -top-60 left-0 h-44" alt="Dashed orange line" />
             </Typography>
         </div>
         <div class="bg-yellow w-1 h-36"/>
@@ -74,7 +76,6 @@ import MotionNumber from '../ui/MotionNumber'
     </div>
     <img src={rocket.src} alt="Rocket" class="absolute -bottom-40 -right-20 scale-x-[-1] w-[270px]"/>
 </section>
-
 <section class="container grid max-w-4xl place-items-center text-nowrap gap-20 mx-auto relative">
     <div data-aos="fade-left" data-aos-delay="600" class="grid text-center gap-3">
         <Typography as="h1" class="text-celeste leading-snug text-5xl">
