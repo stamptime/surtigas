@@ -44,7 +44,7 @@ import dashedOrangeLine from '@public/assets/dashed-orange-line.svg';
 </section>
 <section class="container grid max-w-4xl text-nowrap gap-20 mx-auto relative">
     <div data-aos="zoom-in" data-aos-delay="300" class="grid text-center gap-3 relative">
-        <Typography as="h1" class="text-orange leading-snug text-5xl/9">
+        <Typography as="h1" class="text-orange leading-snug text-5xl/10">
             <span class="text-celeste font-normal text-4xl">Optimización proceso de</span> <br/>
             Indexación masiva<br/> 
             <span class="font-light text-3xl text-celeste">en sistema</span> <span class="text-celeste">DocuWare</span></span>
@@ -78,8 +78,8 @@ import dashedOrangeLine from '@public/assets/dashed-orange-line.svg';
 </section>
 <section class="container grid max-w-4xl place-items-center text-nowrap gap-20 mx-auto relative">
     <div data-aos="fade-left" data-aos-delay="600" class="grid text-center gap-3">
-        <Typography as="h1" class="text-celeste leading-snug text-5xl">
-            <span class="text-yellow font-normal text-4xl">Rediseño del modelo de</span> <br/>
+        <Typography as="h1" class="text-celeste leading-snug text-5xl/10">
+            <span class="text-yellow text-4xl">Rediseño del modelo de</span> <br/>
             Excelencia Operativa<br/> 
             <span class="font-light text-3xl text-yellow">teniendo en cuenta</span> <span class="text-yellow">agilismo</span>
         </Typography>
@@ -107,18 +107,20 @@ import dashedOrangeLine from '@public/assets/dashed-orange-line.svg';
             </Typography>
         </div>
     </div>
-    <div data-aos="fade-up" data-aos-delay="600">
-        <Typography as="h1" class="text-celeste leading-snug text-6xl">
-            <MotionNumber from={70} to={83} duration={2} client:only />% EJECUCIÓN
-        </Typography>
-    </div>
-    <div data-aos="fade-up" data-aos-delay="600" class="grid gap-3">
-        <Typography as="p" class="font-black w-fit bg-yellow py-1 px-3 place-self-center rounded-full">Impacto</Typography>
-        <Typography class="text-center font-light">
-            Buscamos agilidad, procesos más simples y disminución <br/>
-            de quejas y aumento de satisfacción del cliente (NPS) <br/>
-            en un plazo aproximado de 3 años.
-        </Typography>
+    <div class="grid gap-10">
+        <div data-aos="fade-up" data-aos-delay="600">
+            <Typography as="h1" class="text-celeste leading-snug text-6xl">
+                <MotionNumber from={70} to={83} duration={2} client:only />% EJECUCIÓN
+            </Typography>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="600" class="grid gap-3">
+            <Typography as="p" class="font-black w-fit bg-yellow py-1 px-3 place-self-center rounded-full">Impacto</Typography>
+            <Typography class="text-center font-light">
+                Buscamos agilidad, procesos más simples y disminución <br/>
+                de quejas y aumento de satisfacción del cliente (NPS) <br/>
+                en un plazo aproximado de 3 años.
+            </Typography>
+        </div>
     </div>
 </section>
 
@@ -137,7 +139,7 @@ import dashedOrangeLine from '@public/assets/dashed-orange-line.svg';
     <div data-aos="zoom-in" data-aos-delay="600" class="grid grid-cols-2 place-items-center">
         <div class="grid">
             <Typography as="h1" class="text-orange text-[115px]/[2.5rem]">
-                55% <br/>
+                <MotionNumber from={83} to={55} duration={2} client:only />% <br/>
                 <span class="text-[43px]">EJECUCIÓN</span>
             </Typography>
         </div>
