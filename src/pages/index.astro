@@ -1,11 +1,9 @@
 ---
-// import Commercial from '@/components/sections/Commercial.astro';
-// import Financial from '@/components/sections/Financial.astro';
+import Commercial from '@/components/sections/Commercial.astro';
 import Financial from '@/components/sections/Financial.astro';
 import Hero from '@/components/sections/Hero.astro';
 import Management from '@/components/sections/Management.astro';
 import MobileTopups from '@/components/sections/MobileTopups.astro';
-// import operations from '@/components/sections/Operations.astro';
 import Layout from '@/layouts/Layout.astro';
 import '@/styles/base.css'
 ---
@@ -15,6 +13,6 @@ import '@/styles/base.css'
 	<Management />
 	<MobileTopups client:visible />
 	<Financial client:visible/>
-	<!-- <Commercial client:visible/> -->
+	<Commercial client:visible/>
 	<!-- <Operations client:visible/> -->
 </Layout>
