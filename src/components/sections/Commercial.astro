@@ -8,23 +8,30 @@ import telephone from '@public/assets/telephone.svg';
 import Typography from "../ui/Typography.astro";
 import manWithComputer from '@public/assets/man-with-computer.svg';
 import browser from '@public/assets/browser.svg';
+import MotionNumber from "../ui/MotionNumber";
+import dashedCurvedLine from '@public/assets/dashed-curved-line.svg';
+import dashedOrangeLine from '@public/assets/dashed-orange-line.svg';
+import dashedBottomBlueLine from '@public/assets/dashed-bottom-blue-line.svg';
 
 ---
-<section data-aos="fade-in" data-aos-delay="300" class="container grid max-w-4xl place-items-center text-nowrap gap-8 mx-auto relative">
-    <img src={commercialTitle.src} alt="Commercial Title" class="w-[550px] pb-10"/>
+<section class="container grid max-w-4xl place-items-center text-nowrap gap-8 mx-auto relative">
+    <img data-aos="zoom-in" data-aos-delay="100" src={commercialTitle.src} class="mb-10 w-[550px]" alt="Commercial Title" />
     <div class="grid gap-8">
-        <Typography as="h1" class="leading-snug text-7xl text-celeste">
-            <span class="text-yellow">Click</span> <span class="font-light text-4xl">to</span> <span>Call</span>
-        </Typography>
-        <div class="grid grid-cols-2 place-items-center">
+        <div data-aos-delay="300" data-aos="fade-left">
+            <Typography  as="h1" class="leading-snug tracking-tighter text-7xl w-fit text-celeste relative">
+                <span class="text-yellow">Click</span> <span class="font-light text-4xl">to</span> <span>Call</span>
+                <img src={dashedCurvedLine.src} class="absolute h-28 -top-10 -right-80" alt="Dashed up line"/>
+            </Typography>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="300" class="grid grid-cols-2 place-items-center">
             <div class="grid grid-cols-2 justify-items-center place-items-center">
                 <img src={telephone.src} alt="Telephone" />
                 <div class="grid gap-3">
                     <Typography class="font-light"> 
                         Habilitar la opción de solicitar <br/>
-                        <span class="italic text-celeste font-normal">llamada para la atención de PQRS.</span>
+                        <span class="italic text-celeste font-bold">llamada para la atención de PQRS.</span>
                     </Typography>
-                    <Typography as="p" class="font-black w-fit bg-yellow py-1 px-3 place-self-start rounded-full">Impacto</Typography>
+                    <Typography as="p" class="font-black w-fit bg-yellow py-1 mt-8 px-3 place-self-start rounded-full">Impacto</Typography>
                     <Typography class="text-left font-light">
                         Mejoras en tiempos de operación <br/>
                         y experiencia del usuario <br/>
@@ -33,28 +40,29 @@ import browser from '@public/assets/browser.svg';
             </div>
             <div class="grid">
                 <Typography as="h1" class="text-yellow text-[115px]/[2.5rem]">
-                    10% <br/>
+                    <MotionNumber from={0} to={10} duration={2} client:only />% <br/>
                     <span class="text-[43px]">EJECUCIÓN</span>
                 </Typography>
             </div>
         </div>
     </div>
 </section>
-<section data-aos="fade-in" data-aos-delay="300" class="container grid max-w-4xl place-items-center text-nowrap gap-16 mx-auto relative">
+<section data-aos="fade-down" data-aos-delay="300" class="container grid max-w-4xl place-items-center text-nowrap gap-16 mx-auto relative">
     <div class="grid text-center">
-        <Typography as="h1" class="text-orange leading-snug text-7xl">
+        <Typography as="h1" class="text-orange leading-snug text-7xl/10 mb-4 relative">
             <span class="text-celeste text-5xl font-normal">Oficina</span> <br/>
             Virtual Web
+            <img src={dashedOrangeLine.src} class="absolute w-14 top-24 -left-32" alt="Dashed up line"/>
         </Typography>
         <Typography class="font-light">
-            Disponer de un <span class="font-normal italic">módulo de <br/>
+            Disponer de un <span class="font-black italic">módulo de <br/>
             experiencia digital</span> en el cual los clientes <br/>
             puedan autogestionar consultas, trámites <br/>
-            sencillos <span class="font-normal italic">sin establecer contacto <br/>
+            sencillos <span class="font-black italic">sin establecer contacto <br/>
             con asesor.</span> Integraciones con OSF
         </Typography>
     </div>
-    <div class="grid w-5/6 grid-cols-2">
+    <div data-aos="fade-right" data-aos-delay="300" class="grid w-5/6 grid-cols-2">
         <div class="grid gap-3 place-self-start">
             <Typography as="p" class="font-black w-fit bg-celeste py-1 px-3 place-self-center rounded-full">Impacto</Typography>
             <Typography class="text-center font-light">
@@ -62,17 +70,16 @@ import browser from '@public/assets/browser.svg';
                 y experiencia del usuario.
             </Typography>
         </div>
-        <div/>
-        <img src={manWithComputer.src} class="absolute top-44 right-2 w-[320px]" alt="A man with a computer" />
+        <img src={manWithComputer.src} class="absolute -top-36 -right-10 w-[320px]" alt="A man with a computer" />
     </div>
-    <div class="grid">
+    <div data-aos="fade-left" data-aos-delay="300" class="grid">
         <Typography as="h1" class="text-orange text-[96px]/[2.5rem]">
-            40% <br/>
+            <MotionNumber from={10} to={40} duration={2} client:only />% <br/>
             <span class="text-[38px]">EJECUCIÓN</span>
         </Typography>
     </div>
 </section>
-<section class="container grid grid-cols-3 max-w-4xl place-items-center text-nowrap gap-8 mx-auto relative">
+<section data-aos="fade-bottom" data-aos-delay="300" class="container grid grid-cols-3 max-w-4xl place-items-center text-nowrap gap-8 mx-auto relative">
     <div class="col-span-2 text-center">
         <Typography as="h1" class="text-yellow leading-snug text-6xl text-left">
             <span class="text-3xl font-normal">Proyecto de pago de</span> <br/>
@@ -82,22 +89,23 @@ import browser from '@public/assets/browser.svg';
             (Trámite de pago de diferidos y deuda total desde la WEB)
         </Typography>
     </div>
-    <div>
+    <div data-aos="fade-left" data-aos-delay="300">
         <img src={peopleTriangle.src} alt="Pleople triangle" />
     </div>
-    <div>
+    <div data-aos="fade-right" class="relative" data-aos-delay="300">
         <img src={browser.src} alt="Browser" />
         <div class="grid">
-            <Typography as="h1" class="text-yellow text-[96px]/[2.5rem]">
-                95% <br/>
+            <Typography as="h1" class="text-yellow text-[96px]/[2.5rem] relative">
+                <MotionNumber from={40} to={95} duration={2} client:only />% <br/>
                 <span class="text-[38px]">EJECUCIÓN</span>
+                <img src={dashedBottomBlueLine.src} class="absolute h-16 top-23 -right-48" alt="Dashed up line"/>
             </Typography>
         </div>
     </div>
     <div class="col-span-2">
         <Typography class="font-light">
             Módulo WEB disponible para cancelar saldos diferidos. <br/>
-            Este generará un <span class="text-yellow font-normal">cupón de pago con vencimiento programado</span>  <br/>
+            Este generará un <span class="text-yellow font-bold italic">cupón de pago con vencimiento programado</span>  <br/>
             y solo se efectuará los movimientos en el estado de cuenta <br/>
             cuando se procese este cupón.
         </Typography>
@@ -110,8 +118,8 @@ import browser from '@public/assets/browser.svg';
         </div>
     </div>
 </section>
-<section class="container grid grid-cols-2 max-w-4xl place-items-center text-nowrap gap-8 mx-auto relative">
-    <div class="grid place-items-center">
+<section data-aos="fade-left" data-aos-delay="600" class="container grid grid-cols-2 max-w-4xl place-items-center text-nowrap gap-8 mx-auto relative">
+    <div class="grid place-items-center relative">
         <img src={verification.src} alt="Verification layer" class="w-[200px] pl-7"/>
         <Typography class="text-center font-light">
             Migración flujo de trabajo de <br/>
@@ -122,18 +130,19 @@ import browser from '@public/assets/browser.svg';
             proceso de distribución.</span>
         </Typography>
     </div>
-    <div class="grid gap-10 place-items-center text-center">
-        <Typography as="h1" class="text-celeste text-2xl leading-snug font-light">
+    <div data-aos="fade-right" data-aos-delay="600" class="grid gap-10 place-items-center text-center">
+        <Typography as="h1" class="text-celeste text-2xl leading-snug font-light relative">
             <span class="text-4xl font-bold">EFFIWORK</span> plataforma de <br/>
             <span class="text-orange font-bold text-4xl">optimización y flexibilidad</span> <br/>
             en radicación, expedición y envió de <br/>
             respuestas relacionadas con <br/>
             <span class="font-bold text-4xl">PQRS escritas</span>
+            <img src={dashedOrangeLine.src} class="absolute w-14 -top-10 -left-36 rotate-45" alt="Dashed up line"/>
         </Typography>
         <div class="w-1/2 h-1 bg-celeste"/>
         <div class="grid">
             <Typography as="h1" class="text-orange text-[96px]/[2.5rem]">
-                50% <br/>
+                <MotionNumber from={95} to={50} duration={2} client:only />% <br/>
                 <span class="text-[38px]">EJECUCIÓN</span>
             </Typography>
         </div>
@@ -146,7 +155,7 @@ import browser from '@public/assets/browser.svg';
         </div>
     </div>
 </section>
-<section class="container grid place-items-center max-w-4xl text-nowrap mx-auto gap-6">
+<section data-aos="fade-left" data-aos-delay="300" class="container grid place-items-center max-w-4xl text-nowrap mx-auto gap-6">
     <div class="flex relative">
         <img src={payback.src} alt="Payback icon" class="absolute text-right w-[160px]"/>
         <Typography as="h1" class="text-orange text-6xl pl-[120px]">
@@ -154,7 +163,7 @@ import browser from '@public/assets/browser.svg';
             <span class="text-yellow">Parciales</span>
         </Typography>
     </div>
-    <div class="h-[2px] w-[500px] bg-yellow"/>
+    <div data-aos="fade-down" data-aos-delay="300" class="h-[2px] w-[500px] bg-yellow"/>
     <Typography class="text-center font-light text-2xl">
         Brindar a los clientes la opción de <br/>
         <span class="font-normal">normalizar/sincronizar la duda</span> de sus productos <br/>
@@ -162,7 +171,7 @@ import browser from '@public/assets/browser.svg';
         deuda facturada</span> sin tener que hacer <br/>
         desplazamiento las oficinas de STG.
     </Typography>
-    <div class="grid grid-cols-2 gap-20 pt-3">
+    <div data-aos="fade-right" data-aos-delay="300" class="grid grid-cols-2 gap-20 pt-3">
         <div>
             <Typography as="p" class="font-black w-fit bg-yellow py-1 px-3 place-self-start rounded-full">Impacto</Typography>
             <Typography class="font-light">
@@ -173,7 +182,7 @@ import browser from '@public/assets/browser.svg';
         </div>
         <div class="grid">
             <Typography as="h1" class="text-yellow text-[96px]/[2.5rem]">
-                30% <br/>
+                <MotionNumber from={50} to={30} duration={2} client:only />% <br/>
                 <span class="text-[38px]">EJECUCIÓN</span>
             </Typography>
         </div>
