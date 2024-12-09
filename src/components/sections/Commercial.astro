@@ -1,0 +1,181 @@
+---
+import { Image } from "astro:assets";
+import payback from '@public/assets/payback.svg';
+import verification from '@public/assets/verification.svg';
+import peopleTriangle from '@public/assets/people-triangle.png';
+import commercialTitle from "@public/assets/commercial-title.svg";
+import telephone from '@public/assets/telephone.svg';
+import Typography from "../ui/Typography.astro";
+import manWithComputer from '@public/assets/man-with-computer.svg';
+import browser from '@public/assets/browser.svg';
+
+---
+<section class="container grid max-w-4xl place-items-center text-nowrap gap-8 mx-auto relative">
+    <img src={commercialTitle.src} alt="Commercial Title" />
+    <div class="grid gap-8">
+        <Typography as="h1" class="text-orange leading-snug text-5xl">
+            Click to Call
+        </Typography>
+        <div class="grid grid-cols-2 place-items-center">
+            <div class="grid grid-cols-2 justify-items-center place-items-center">
+                <img src={telephone.src} alt="Telephone" />
+                <div class="grid gap-3">
+                    <Typography> 
+                        Habilitar la opción de solicitar <br/>
+                        llamada para la atención de PQRS.
+                    </Typography>
+                    <Typography as="p" class="font-black w-fit bg-celeste py-1 px-3 place-self-start rounded-full">Impacto</Typography>
+                    <Typography class="text-left">
+                        Mejoras en tiempos de operación <br/>
+                        y experiencia del usuario <br/>
+                    </Typography>
+                </div>
+            </div>
+            <div class="grid">
+                <Typography as="h1" class="text-yellow text-[115px]/[2.5rem]">
+                    10% <br/>
+                    <span class="text-[43px]">EJECUCIÓN</span>
+                </Typography>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container grid max-w-4xl place-items-center text-nowrap gap-8 mx-auto relative">
+    <div class="grid text-center">
+        <Typography as="h1" class="text-orange leading-snug text-5xl">
+            Oficina <br/>
+            Virtual Web
+        </Typography>
+        <Typography>
+            Disponer de un módulo de <br/>
+            experiencia digital en el cual los clientes <br/>
+            puedan autogestionar consultas, trámites <br/>
+            sencillos sin establecer contacto <br/>
+            con asesor. Integraciones con OSF
+        </Typography>
+    </div>
+    <div class="grid w-5/6 grid-cols-2">
+        <div class="grid gap-3 place-self-start">
+            <Typography as="p" class="font-black w-fit bg-celeste py-1 px-3 place-self-center rounded-full">Impacto</Typography>
+            <Typography class="text-center">
+                Mejoras en tiempos de operación <br/>
+                y experiencia del usuario.
+            </Typography>
+        </div>
+        <div/>
+        <img src={manWithComputer.src} class="absolute top-20 right-0" alt="A man with a computer" />
+    </div>
+    <div class="grid">
+        <Typography as="h1" class="text-yellow text-[96px]/[2.5rem]">
+            40% <br/>
+            <span class="text-[38px]">EJECUCIÓN</span>
+        </Typography>
+    </div>
+</section>
+<section class="container grid grid-cols-3 max-w-4xl place-items-center text-nowrap gap-8 mx-auto relative">
+    <div class="col-span-2 text-center">
+        <Typography as="h1" class="text-orange leading-snug text-5xl">
+            Proyecto de pago de <br/>
+            diferidos por la WEB
+        </Typography>
+        <Typography>
+            (Trámite de pago de diferidos y deuda total desde la WEB)
+        </Typography>
+    </div>
+    <div>
+        <img src={peopleTriangle.src} alt="Pleople triangle" />
+    </div>
+    <div>
+        <img src={browser.src} alt="Browser" />
+        <div class="grid">
+            <Typography as="h1" class="text-yellow text-[96px]/[2.5rem]">
+                95% <br/>
+                <span class="text-[38px]">EJECUCIÓN</span>
+            </Typography>
+        </div>
+    </div>
+    <div class="col-span-2">
+        <Typography>
+            Módulo WEB disponible para cancelar saldos diferidos. <br/>
+            Este generará un cupón de pago con vencimiento programado  <br/>
+            y solo se efectuará los movimientos en el estado de cuenta <br/>
+            cuando se procese este cupón.
+        </Typography>
+        <div class="grid gap-3 mt-10">
+            <Typography as="p" class="font-black w-fit bg-yellow py-1 px-3 place-self-center rounded-full">Impacto</Typography>
+            <Typography class="text-center">
+                Mejoras en tiempos de operación <br/>
+                y experiencia del usuario
+            </Typography>
+        </div>
+    </div>
+</section>
+<section class="container grid grid-cols-2 max-w-4xl place-items-center text-nowrap gap-8 mx-auto relative">
+    <div class="grid place-items-center">
+        <img src={verification.src} alt="Verification layer"/>
+        <Typography class="text-center">
+            Migración flujo de trabajo de <br/>
+            Microcolsa a Docuware (Radicación, <br/>
+            distribución y emisión de respuestas). <br/>
+            <br/>
+            Ahorro en horas hombre en <br/>
+            proceso de distribución.
+        </Typography>
+    </div>
+    <div class="grid gap-10 place-items-center text-center">
+        <Typography as="h1" class="text-orange text-4xl leading-snug">
+            EFFIWORK plataforma de <br/>
+            optimización y flexibilidad <br/>
+            en radicación, expedición y envió de <br/>
+            respuestas relacionadas con <br/>
+            PQRS escritas
+        </Typography>
+        <div class="w-1/2 h-1 bg-celeste"/>
+        <div class="grid">
+            <Typography as="h1" class="text-yellow text-[96px]/[2.5rem]">
+                50% <br/>
+                <span class="text-[38px]">EJECUCIÓN</span>
+            </Typography>
+        </div>
+        <div>
+            <Typography as="p" class="font-black w-fit bg-celeste py-1 px-3 place-self-center rounded-full">Impacto</Typography>
+            <Typography>
+                Mejoras en tiempos de operación <br/>
+                y experiencia del usuario.
+            </Typography>
+        </div>
+    </div>
+</section>
+<section class="container grid place-items-center max-w-4xl text-nowrap gap-8 mx-auto">
+    <div class="flex">
+        <img src={payback.src} alt="Payback icon" />
+        <Typography as="h1" class="text-orange text-5xl">
+            Pagos <br/>
+            Parciales
+        </Typography>
+    </div>
+    <div class="h-1 w-2/3 bg-yellow"/>
+    <Typography>
+        Brindar a los clientes la opción de <br/>
+        normalizar/sincronizar la duda de sus productos <br/>
+        brindando la posibilidad de hacer abonos a su <br/>
+        deuda facturada sin tener que hacer <br/>
+        desplazamiento las oficinas de STG.
+    </Typography>
+    <div class="grid grid-cols-2 gap-10">
+        <div>
+            <Typography as="p" class="font-black w-fit bg-yellow py-1 px-3 place-self-start rounded-full">Impacto</Typography>
+            <Typography>
+                Mejoras en tiempos de <br/>
+                operación y experiencia <br/>
+                del usuario <br/>
+            </Typography>
+        </div>
+        <div class="grid">
+            <Typography as="h1" class="text-yellow text-[96px]/[2.5rem]">
+                30% <br/>
+                <span class="text-[38px]">EJECUCIÓN</span>
+            </Typography>
+        </div>
+    </div>
+</section>

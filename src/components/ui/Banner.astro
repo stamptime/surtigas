@@ -1,0 +1,19 @@
+---
+import clsx from 'clsx'
+
+interface Props {
+    class?: string;
+}
+
+const { class: className } = Astro.props
+
+---
+<div class={clsx("w-full h-5 grid grid-cols-8", className)}>
+    <div class="bg-magenta"/>
+    <div class="bg-celeste"/>
+    <div class="bg-orange"/>
+    <div class="bg-green"/>
+    <div class="bg-yellow"/>
+    <div class="bg-magenta"/>
+    <div class="bg-celeste col-span-2"/>
+</div>
