@@ -7,19 +7,25 @@ import Typography from '../ui/Typography.astro';
 import analytics from '@public/assets/analytics.svg';
 import certification from '@public/assets/certification.svg';
 import spaceDiver from '@public/assets/space-diver.svg';
+import dashedCurvedLine from '@public/assets/dashed-curved-line.svg';
+import dashedBottomBlueLine from '@public/assets/dashed-bottom-blue-line.svg';
+import dashedLineYellow from '@public/assets/dashed-line-yellow.svg';
+import dashedCurvedBlueLine from '@public/assets/dashed-curved-blue-line.svg';
+import MotionNumber from '../ui/MotionNumber';
 ---
-<section class="container grid place-items-center max-w-4xl text-nowrap gap-8 mx-auto">
-    <img src={operationsTitle.src} alt="Operations title" class="w-[550px] pb-10"/>
+<section data-aos="fade-right" data-aos-delay="600" class="container grid place-items-center max-w-4xl text-nowrap gap-8 mx-auto">
+    <img src={operationsTitle.src} alt="Operations title" class="w-[550px] pb-10 mb-20"/>
     <div class="grid grid-cols-2 place-content-between">
         <div class="grid gap-3">
-            <Typography as="h1" class="text-yellow text-5xl">
+            <Typography as="h1" class="text-yellow text-5xl relative">
                 <span class="text-orange">Centro <span class="text-4xl font-light">de</span> <br/></span>
                 medición <br/>
                 preensamblado <br/>
+                <img src={dashedCurvedLine.src} class="absolute h-28 -top-10 -right-28" alt="Dashed up line"/>
             </Typography>
             <div class="h-[2px] w-[400px] bg-yellow px-2"/>
             <ul class="space-y-3">
-                <li class="before:bg-yellow before:items-center before:w-[6px] gap-4 before:h-12 before:flex flex justify-start before:rounded-full font-light">
+                <li class="before:bg-yellow before:items-center before:w-[6px] gap-4 before:h-24 before:flex flex justify-start before:rounded-full font-light">
                     <Typography>
                         Ensamblaje de los equipos y accesorios que <br/>
                         componen el centro de medición de una instalación <br/>
@@ -58,14 +64,15 @@ import spaceDiver from '@public/assets/space-diver.svg';
             </div>
             <img src={document.src} alt="Document image" class="w-[160px]"/>
             <Typography as="h1" class="text-yellow text-4xl">
-                <span class="text-[90px]">80%</span><br/>
+                <span class="text-[90px]">
+                <MotionNumber from={10} to={80} duration={2} client:only/>%</span><br/>
                 EJECUCIÓN
             </Typography>
         </div>
     </div>
 </section>
-<section class="container grid place-items-center max-w-4xl text-nowrap gap-8 mx-auto">
-    <Typography as="h1" class="text-celeste text-center text-5xl font-normal pb-20px">
+<section data-aos="fade-right" data-aos-delay="600" class="container grid place-items-center max-w-4xl text-nowrap gap-8 mx-auto">
+    <Typography as="h1" class="text-celeste text-center text-5xl/10 font-normal pb-[20px]">
         Bastón de <span class="text-orange text-6xl font-bold">PEALPE</span> <br/>
         en centros de <span class="text-6xl font-bold">medición</span>
     </Typography>
@@ -75,7 +82,7 @@ import spaceDiver from '@public/assets/space-diver.svg';
                 <span class="italic font-semibold">PEALPE</span> (Polietileno aluminio) Reemplazar el <br/>
                 bastón de cobre instalado en el centro de<br/>
                 medición por un bastón de material <br/>
-                de PEALPE y <span class="text-celeste">reducción de 5 a 3 accesorios <br/>
+                de PEALPE y <span class="text-celeste font-bold italic">reducción de 5 a 3 accesorios <br/>
                 del centro de medición.</span>
             </Typography>
         </div>
@@ -85,16 +92,19 @@ import spaceDiver from '@public/assets/space-diver.svg';
         <div class="flex items-center h-full">
             <Typography class="text-left font-light">
                 En espera de entrega de material por<br/>
-                parte del proveedor. <span class="text-celeste">Tiene un piloto <br/>
+                parte del proveedor. <span class="text-celeste font-bold italic">Tiene un piloto <br/>
                 de 15 usuarios en 2023, actualmente <br/>
                 sin reporte de fugas.</span>
             </Typography>
         </div>
     </div>
     <div class="grid place-items-center mt-16 gap-8 relative">
-        <Typography as="h1" class="text-orange text-4xl pb-7">
-            <span class="text-[90px]">50%</span><br/>
+        <Typography as="h1" class="text-orange text-center text-5xl pb-7 relative">
+            <span class="text-[120px]">
+                <MotionNumber from={80} to={50} duration={2} client:only/>%
+            </span><br/>
             EJECUCIÓN
+            <img src={dashedBottomBlueLine.src} class="absolute top-36 -right-40 h-14 -rotate-90" alt="Dashed bottom blue line"/>
         </Typography>
         <div class="grid gap-2 relative">
             <Typography as="p" class="font-black w-fit bg-celeste py-1 px-3 place-self-center rounded-full text-xl">Impacto</Typography>
@@ -105,41 +115,45 @@ import spaceDiver from '@public/assets/space-diver.svg';
                 mayor productividad
             </Typography>
         </div>
-        <img src={inbox.src} class="absolute -left-40 top-0 w-[150px]" alt="Documents inbox" />
+        <img src={inbox.src} class="absolute -left-48 top-32 w-[150px]" alt="Documents inbox" />
     </div>
 </section>
-<section class="container grid place-items-center max-w-4xl text-nowrap gap-8 mx-auto relative">
+<section data-aos="fade-right" data-aos-delay="600" class="container grid place-items-center max-w-4xl text-nowrap gap-8 mx-auto relative">
     <div class="place-self-end">
-        <Typography as="h1" class="text-orange text-right text-[55px] leading-none">
+        <Typography as="h1" class="text-orange text-right text-[55px]/10 relative mb-8">
             Inteligencia Artificial <br/>
             <span class="text-yellow text-3xl font-light">para <span class="text-4xl font-bold">validación virtual</span> de certificados</span>
+            <img src={dashedLineYellow.src} class="absolute w-10 top-0 right-0" alt="Dashed bottom blue line"/>
         </Typography>
-        <Typography class="text-right font-light text-2xl mt-2">
-            Un <span class="text-orange font-bold">robot que valide que la información</span> <br/>
+        <Typography class="text-right font-light text-2xl/6 mt-2 relative">
+            Un <span class="text-orange font-bold italic">robot que valide que la información</span> <br/>
             que se encuentra en el certificado es la <br/>
-            misma que está en <span class="text-orange font-semibold">Smart Flex</span>
+            misma que está en <span class="text-orange font-semibold italic">Smart Flex</span>
+            <img src={dashedLineYellow.src} class="absolute h-20 top-0 left-0" alt="Dashed bottom blue line"/>
         </Typography>
     </div>
     <Typography as="h1" class="text-yellow text-4xl">
-        <span class="text-[100px]">50%</span><br/>
+        <span class="text-[100px]">
+            <MotionNumber from={10} to={50} duration={2} client:only/>%
+        </span><br/>
         EJECUCIÓN
     </Typography>
-    <img src={certification.src} class="absolute left-24 w-[200px]" alt="Document certificated" />
+    <img src={certification.src} class="absolute left-24 w-[150px]" alt="Document certificated" />
 </section>
-<section class="container grid place-items-center max-w-4xl text-nowrap gap-8 mx-auto relative">
+<section data-aos="fade-right" data-aos-delay="600" class="container grid place-items-center max-w-4xl text-nowrap gap-8 mx-auto relative">
     <div class="place-self-start">
         <Typography as="h1" class="text-celeste text-left text-5xl font-light pb-5">
             Analítica de datos para <br/>
             <span class="text-orange font-bold text-6xl">reducción de daño</span> <br/>
             al gasoducto <br/>
         </Typography>
-        <Typography class="text-left text-2xl font-light">
+        <Typography class="text-left text-2xl font-light relative">
             Analítica de datos  para la reducción <br/>
             de daños al gasoducto mediante <br/>
             el uso de Power Bi.
         </Typography>
     </div>
-    <div class="relative h-[450px]">
+    <div data-aos="fade-down" data-aos-delay="600" class="relative h-[450px]">
         <div class="place-self-end grid place-items-center gap-10 absolute -top-10">
             <div class="grid gap-2 relative">
                 <Typography as="p" class="font-black w-fit bg-celeste py-1 px-3 place-self-center rounded-full text-xl">Impacto</Typography>
@@ -150,17 +164,20 @@ import spaceDiver from '@public/assets/space-diver.svg';
                     Optimización de recursos para prevención de <br/>
                     daños y atención de emergencias.
                 </Typography>
+                <img src={dashedCurvedBlueLine.src} class="absolute -left-64 h-60 -bottom-32" alt="Dashed curved blue line">
             </div>
             <img src={analytics.src}  alt="Analytics"  class="w-[150px]"/>
             <Typography as="h1" class="text-celeste text-4xl">
-                <span class="text-[100px]">50%</span><br/>
+                <span class="text-[100px]">
+            <MotionNumber from={10} to={50} duration={2} client:only/>%
+                </span><br/>
                 EJECUCIÓN
             </Typography>
         </div>
     </div>
     <img src={bulbBox.src} class="absolute left-0 -bottom-10 w-[300px]" alt="Bulb in a box" />
 </section>
-<section class="container grid place-items-center max-w-4xl text-nowrap gap-8 mx-auto relative">
+<section data-aos="fade-right" data-aos-delay="600" class="container grid place-items-center max-w-4xl text-nowrap gap-8 mx-auto relative">
     <Typography as="h1" class="text-celeste text-center font-light text-5xl">
         Herramienta para reporte del <br/>
         <span class="text-orange font-bold text-7xl">preoperacional</span> <br/>
@@ -177,7 +194,8 @@ import spaceDiver from '@public/assets/space-diver.svg';
     <div class="grid grid-cols-[1fr,10px,1fr] gap-10 place-items-center divide-yellow mt-10">
         <div class="grid place-items-center place-self-end gap-3 items-center">
             <Typography as="h1" class="text-orange text-center text-[115px]/[2.5rem]">
-                100% <br/>
+                <MotionNumber from={50} to={100} duration={2} client:only/>%
+                <br/>
                 <span class="text-[43px]">EJECUCIÓN</span>
             </Typography>
         </div>

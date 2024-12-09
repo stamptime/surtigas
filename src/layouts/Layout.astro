@@ -12,10 +12,10 @@ import 'aos/dist/aos.css';
 		<meta name="generator" content={Astro.generator} />
 		<title>Surtigas</title>
 	</head>
-	<body class="bg-background grid gap-40">
+	<body class="bg-background overflow-x-hidden relative grid gap-40">
 		<Banner class="sticky top-0 z-10"/>
 		<slot />
-		<Banner/>
+		<Banner class="absolute bottom-0"/>
 	</body>
 </html>
 <script>
