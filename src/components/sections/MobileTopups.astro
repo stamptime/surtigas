@@ -1,47 +1,13 @@
 ---
-import mobileTopups from '@public/assets/mobile-topups.png'
-import mobileTopupsPhone from '@public/assets/mobile-topups-phone.svg';
-import rocket from '@public/assets/rocket.svg';
-import { Image } from 'astro:assets'
 import Typography from '@/components/ui/Typography.astro';
-import theSignalSpace from '@public/assets/the-signal-space.svg';
-import theSignal from '@public/assets/the-signal.png';
-import peopleTriangle from '@public/assets/people-triangle.png';
 import dataPie from '@public/assets/data-pie.svg';
 import buldBox from '@public/assets/bulb-box.png';
+import signal from '@public/media/signal.mp4'
+import topups from '@public/media/topups.mp4'
+
 ---
-<section class="container grid place-content-center gap-8 max-w-4xl mx-auto ">
-    <div class="grid grid-cols-2 grid-rows-3 gap-20 ml-40">
-        <div class="row-span-3 grid">
-            <img src={mobileTopups.src} class="scale-150" alt="Mobile Top-ups title" />
-            <img src={mobileTopupsPhone.src} class="row-span-2" alt="Mobile Topups Phone"/>
-        </div>
-        <img src={rocket.src} class="ml-20 row-span-2 place-self-end" alt="Mobile Topups Rocket"/>
-        <Typography>
-            El servicio de gas prepago es <br/>
-            un método de comercialización <br/>
-            el cual <span class="font-black">permite que nuestros <br/>
-            usuarios por medio de recargas</span><br/>
-            en puntos autorizados puedan hacer <br/>
-            <span class="font-black">una autogestión de su consumo</span><br/>
-            basada en su capacidad de pago.
-        </Typography>
-    </div>
-</section>
-<section class="container mb-20 grid place-content-center max-w-4xl mx-auto relative">
-    <img src={theSignal.src} alt="The Signa title"/>
-    <img src={theSignalSpace.src} class="place-self-center mb-20" alt="The Signa space"/>
-    <Typography class="text-center">
-        Herramienta colaborativa para colaboradores y<br/>
-        contratistas. Desarrollada en una <span class="font-black">plataforma<br/>
-        tecnológica</span> que permite de manera rápida<br/>
-        <span class="font-black">reportar anomalías y oportunidades comerciales.</span><br/>
-        Se abre fácilmente a través de un link tanto en Android<br/>
-        como en iPhone y se puede anclar a la página de<br/>
-        inicio de nuestros celulares.
-    </Typography>
-    <img src={peopleTriangle.src} class="absolute -bottom-40" alt="The Signa title"/>
-</section>
+<video data-aos="zoom-in" data-aos-delay="300" src={topups} class="w-screen" autoplay loop muted/>
+<video data-aos="zoom-in" data-aos-delay="600" src={signal} class="w-screen" autoplay loop muted/>
 <section class="container grid gap-8 mt-10 place-content-center max-w-4xl mx-auto relative">
     <div class="grid gap-3 w-fit relative">
         <Typography as="h1" class="text-left text-orange">
@@ -71,7 +37,7 @@ import buldBox from '@public/assets/bulb-box.png';
                         en datos.
                     </Typography>
                 </li>
-                <li class="after:bg-celeste gap-4 after:w-[6px] after:h-12 after:block flex justify-end after:rounded-full">
+                <li data-aos="fade-in" data-aos-delay="300" class="after:bg-celeste gap-4 after:w-[6px] after:h-12 after:block flex justify-end after:rounded-full">
                     <Typography>
                         Optimización de recursos para prevención de<br/>
                         daños y atención de emergencias.
