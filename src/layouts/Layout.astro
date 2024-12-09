@@ -1,6 +1,7 @@
 ---
 import Banner from "@/components/ui/Banner.astro";
 import 'aos/dist/aos.css';
+
 ---
 <!doctype html>
 <html lang="en">
@@ -12,12 +13,12 @@ import 'aos/dist/aos.css';
 		<title>Surtigas</title>
 	</head>
 	<body class="bg-background grid gap-40">
-		<script>
-			import AOS from "aos";
-			AOS.init();
-    	</script>
 		<Banner class="sticky top-0 z-10"/>
 		<slot />
 		<Banner/>
 	</body>
 </html>
+<script>
+	import AOS from "aos";
+	AOS.init();
+</script>

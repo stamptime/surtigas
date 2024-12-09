@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113.49 168.9">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #2782c5;
+        stroke-dasharray: 20;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1">
+    <path class="cls-1" d="M2.5,2.5s122.78,26.78,107.11,163.9"/>
+  </g>
+</svg>
