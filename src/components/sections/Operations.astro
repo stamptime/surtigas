@@ -9,17 +9,17 @@ import certification from '@public/assets/certification.svg';
 import spaceDiver from '@public/assets/space-diver.svg';
 ---
 <section class="container grid place-items-center max-w-4xl text-nowrap gap-8 mx-auto">
-    <img src={operationsTitle.src} alt="Operations title" />
+    <img src={operationsTitle.src} alt="Operations title" class="w-[550px] pb-10"/>
     <div class="grid grid-cols-2 place-content-between">
         <div class="grid gap-3">
-            <Typography as="h1" class="text-yellow">
-                Centro de <br/>
+            <Typography as="h1" class="text-yellow text-5xl">
+                <span class="text-orange">Centro <span class="text-4xl font-light">de</span> <br/></span>
                 medición <br/>
                 preensamblado <br/>
             </Typography>
-            <div class="h-1 w-1/2 bg-yellow"/>
+            <div class="h-[2px] w-[400px] bg-yellow px-2"/>
             <ul class="space-y-3">
-                <li class="before:bg-celeste before:w-[6px] gap-4 before:h-12 before:block flex justify-start before:rounded-full">
+                <li class="before:bg-yellow before:items-center before:w-[6px] gap-4 before:h-12 before:flex flex justify-start before:rounded-full font-light">
                     <Typography>
                         Ensamblaje de los equipos y accesorios que <br/>
                         componen el centro de medición de una instalación <br/>
@@ -27,18 +27,18 @@ import spaceDiver from '@public/assets/space-diver.svg';
                         medidor -accesorio (racores, conectores) y el bastón.
                     </Typography>
                 </li>
-                <li class="before:bg-celeste before:w-[6px] gap-4 before:h-12 before:block flex before:rounded-full">
+                <li class="before:bg-yellow before:w-[6px] gap-4 before:h-12 before:block flex before:rounded-full font-light">
                     <Typography>
                         Conectar un centro de medición normalmente <br/>
                         toma 30 min, con esta mejora se reduce a 15 min.
                     </Typography>
                 </li>
-                <li class="before:bg-celeste gap-4 before:w-[6px] before:h-12 before:block flex before:rounded-full">
+                <li class="before:bg-yellow gap-4 before:w-[6px] before:h-12 before:block flex before:rounded-full font-light">
                     <Typography>
                         Se han instalado 27 medidores preensamblado.
                     </Typography>
                 </li>
-                <li class="before:bg-celeste gap-4 before:w-[6px] before:h-12 before:block flex before:rounded-full">
+                <li class="before:bg-yellow gap-4 before:w-[6px] before:h-12 before:block flex before:rounded-full font-light">
                     <Typography>
                         Siguiente paso: buscar proveedores <br/>
                         contratistas u ordenes de compra.
@@ -48,135 +48,143 @@ import spaceDiver from '@public/assets/space-diver.svg';
         </div>
         <div class="grid place-items-center place-self-end gap-8">
             <div>
-                <Typography as="p" class="font-black w-fit bg-celeste py-1 px-3 place-self-center rounded-full">Impacto</Typography>
-                <Typography class="text-center">
+                <Typography as="p" class="font-black w-fit bg-yellow py-1 px-3 place-self-center rounded-full text-sm">Impacto</Typography>
+                <Typography class="text-center font-light pt-1">
                     Ahorro de mano de obra <br/>
                     disminución de fuga. <br/>
                     Mejora de las condiciones del técnico <br/>
                     para realizar la instalación. <br/>
                 </Typography>
             </div>
-            <img src={document.src} alt="Document image" />
-            <Typography as="h1" class="text-yellow text-3xl/8">
-                <span class="text-[80px]">80%</span><br/>
+            <img src={document.src} alt="Document image" class="w-[160px]"/>
+            <Typography as="h1" class="text-yellow text-4xl">
+                <span class="text-[90px]">80%</span><br/>
                 EJECUCIÓN
             </Typography>
         </div>
     </div>
 </section>
 <section class="container grid place-items-center max-w-4xl text-nowrap gap-8 mx-auto">
-    <Typography as="h1" class="text-orange">
-        Bastón de PEALPE <br/>
-        en centros de medición
+    <Typography as="h1" class="text-celeste text-center text-5xl font-normal pb-20px">
+        Bastón de <span class="text-orange text-6xl font-bold">PEALPE</span> <br/>
+        en centros de <span class="text-6xl font-bold">medición</span>
     </Typography>
-    <div class="grid gap-8 place-items-center grid-cols-[1fr,auto,1fr]">
-        <Typography class="text-right">
-            PEALPE (Polietileno aluminio) Reemplazar el <br/>
-            bastón de cobre instalado en el centro de<br/>
-            medición por un bastón de material <br/>
-            de PEALPE y reducción de 5 a 3 accesorios <br/>
-            del centro de medición.
-        </Typography>
-        <div class="w-1 h-20 bg-yellow"/>
-        <Typography class="text-left">
-            En espera de entrega de material por<br/>
-            parte del proveedor. Tiene un piloto <br/>
-            de 15 usuarios en 2023, actualmente <br/>
-            sin reporte de fugas.
-        </Typography>
+    <div class="grid gap-8 grid-cols-[1fr,10px,1fr]">
+        <div class="flex items-center">
+            <Typography class="text-right font-light">
+                <span class="italic font-semibold">PEALPE</span> (Polietileno aluminio) Reemplazar el <br/>
+                bastón de cobre instalado en el centro de<br/>
+                medición por un bastón de material <br/>
+                de PEALPE y <span class="text-celeste">reducción de 5 a 3 accesorios <br/>
+                del centro de medición.</span>
+            </Typography>
+        </div>
+        <div class="flex items-center">
+            <div class="w-[2px] h-[80px] bg-celeste"/>
+        </div>
+        <div class="flex items-center h-full">
+            <Typography class="text-left font-light">
+                En espera de entrega de material por<br/>
+                parte del proveedor. <span class="text-celeste">Tiene un piloto <br/>
+                de 15 usuarios en 2023, actualmente <br/>
+                sin reporte de fugas.</span>
+            </Typography>
+        </div>
     </div>
     <div class="grid place-items-center mt-16 gap-8 relative">
-        <Typography as="h1" class="text-yellow text-3xl/8">
-            <span class="text-[80px]">50%</span><br/>
+        <Typography as="h1" class="text-orange text-4xl pb-7">
+            <span class="text-[90px]">50%</span><br/>
             EJECUCIÓN
         </Typography>
         <div class="grid gap-2 relative">
-            <Typography as="p" class="font-black w-fit bg-celeste py-1 px-3 place-self-center rounded-full">Impacto</Typography>
-            <Typography class="text-center">
+            <Typography as="p" class="font-black w-fit bg-celeste py-1 px-3 place-self-center rounded-full text-xl">Impacto</Typography>
+            <Typography class="text-center font-light">
                 Ahorro en costos de materiales (insumos) <br/>
                 Reducción de fugas, los accesorios vienen <br/>
                 preensamblados al bastón <br/>
                 mayor productividad
             </Typography>
         </div>
-        <img src={inbox.src} class="absolute -left-40 top-0 scale-95" alt="Documents inbox" />
+        <img src={inbox.src} class="absolute -left-40 top-0 w-[150px]" alt="Documents inbox" />
     </div>
 </section>
 <section class="container grid place-items-center max-w-4xl text-nowrap gap-8 mx-auto relative">
     <div class="place-self-end">
-        <Typography as="h1" class="text-orange text-right">
+        <Typography as="h1" class="text-orange text-right text-[55px] leading-none">
             Inteligencia Artificial <br/>
-            para validación virtual de certificados
+            <span class="text-yellow text-3xl font-light">para <span class="text-4xl font-bold">validación virtual</span> de certificados</span>
         </Typography>
-        <Typography class="text-right">
-            Un robot que valide que la información <br/>
+        <Typography class="text-right font-light text-2xl mt-2">
+            Un <span class="text-orange font-bold">robot que valide que la información</span> <br/>
             que se encuentra en el certificado es la <br/>
-            misma que está en Smart Flex
+            misma que está en <span class="text-orange font-semibold">Smart Flex</span>
         </Typography>
     </div>
-    <Typography as="h1" class="text-yellow text-3xl/8">
-        <span class="text-[80px]">50%</span><br/>
+    <Typography as="h1" class="text-yellow text-4xl">
+        <span class="text-[100px]">50%</span><br/>
         EJECUCIÓN
     </Typography>
-    <img src={certification.src} class="absolute left-24 scale-95" alt="Document certificated" />
+    <img src={certification.src} class="absolute left-24 w-[200px]" alt="Document certificated" />
 </section>
 <section class="container grid place-items-center max-w-4xl text-nowrap gap-8 mx-auto relative">
     <div class="place-self-start">
-        <Typography as="h1" class="text-celeste text-left">
+        <Typography as="h1" class="text-celeste text-left text-5xl font-light pb-5">
             Analítica de datos para <br/>
-            reducción de daño <br/>
+            <span class="text-orange font-bold text-6xl">reducción de daño</span> <br/>
             al gasoducto <br/>
         </Typography>
-        <Typography class="text-left">
+        <Typography class="text-left text-2xl font-light">
             Analítica de datos  para la reducción <br/>
             de daños al gasoducto mediante <br/>
             el uso de Power Bi.
         </Typography>
     </div>
-    <div class="place-self-end grid place-items-center gap-10">
-        <div class="grid gap-2 relative">
-            <Typography as="p" class="font-black w-fit bg-celeste py-1 px-3 place-self-center rounded-full">Impacto</Typography>
-            <Typography class="text-center">
-                Disminución del número de incidentes de daños <br/>
-                a las redes de distribución de gas. <br/>
-                Decisiones de gestión informadas y basadas en datos. <br/>
-                Optimización de recursos para prevención de <br/>
-                daños y atención de emergencias.
+    <div class="relative h-[450px]">
+        <div class="place-self-end grid place-items-center gap-10 absolute -top-10">
+            <div class="grid gap-2 relative">
+                <Typography as="p" class="font-black w-fit bg-celeste py-1 px-3 place-self-center rounded-full text-xl">Impacto</Typography>
+                <Typography class="text-center font-light">
+                    Disminución del número de incidentes de daños <br/>
+                    a las redes de distribución de gas. <br/>
+                    Decisiones de gestión informadas y basadas en datos. <br/>
+                    Optimización de recursos para prevención de <br/>
+                    daños y atención de emergencias.
+                </Typography>
+            </div>
+            <img src={analytics.src}  alt="Analytics"  class="w-[150px]"/>
+            <Typography as="h1" class="text-celeste text-4xl">
+                <span class="text-[100px]">50%</span><br/>
+                EJECUCIÓN
             </Typography>
         </div>
-        <img src={analytics.src}  alt="Analytics" />
-        <Typography as="h1" class="text-celeste text-3xl/8">
-            <span class="text-[80px]">50%</span><br/>
-            EJECUCIÓN
-        </Typography>
     </div>
-    <img src={bulbBox.src} class="absolute left-0 -bottom-10 scale-125" alt="Bulb in a box" />
+    <img src={bulbBox.src} class="absolute left-0 -bottom-10 w-[300px]" alt="Bulb in a box" />
 </section>
 <section class="container grid place-items-center max-w-4xl text-nowrap gap-8 mx-auto relative">
-    <Typography as="h1" class="text-celeste text-center">
+    <Typography as="h1" class="text-celeste text-center font-light text-5xl">
         Herramienta para reporte del <br/>
-        preoperacional <br/>
-        autoinspección de EPP <br/>
+        <span class="text-orange font-bold text-7xl">preoperacional</span> <br/>
+        autoinspección de <span class="font-bold text-6xl">EPP</span> <br/>
         y herramienta <br/>
     </Typography>
-    <Typography class="text-center">
-        Notificar en tiempo real a las partes interesadas de los daños o incumplimiento <br/>
-        de los aspectos asociados al pre operacional de los vehículos (carros y motos) <br/>
+    <Typography class="text-center font-light">
+        <span class="text-celeste font-semibold italic">Notificar en tiempo real a las partes interesadas de los daños o incumplimiento <br/>
+        de los aspectos asociados al pre operacional de los vehículos (carros y motos)</span> <br/>
         Se integran Forms y Power Automate para generar las notificaciones. <br/>
         La primera fase fue de vehículos, la segunda fase es de herramientas.  <br/>
         Proyecto en réplica y con proyección transversal.
     </Typography>
-    <div class="grid grid-cols-[1fr,0.5fr,1fr] gap-10 place-items-center divide-yellow">
+    <div class="grid grid-cols-[1fr,10px,1fr] gap-10 place-items-center divide-yellow mt-10">
         <div class="grid place-items-center place-self-end gap-3 items-center">
-            <Typography as="h1" class="text-yellow text-center text-[115px]/[2.5rem]">
+            <Typography as="h1" class="text-orange text-center text-[115px]/[2.5rem]">
                 100% <br/>
                 <span class="text-[43px]">EJECUCIÓN</span>
             </Typography>
         </div>
-        <div class="bg-yellow w-1 h-36"/>
+        <div class="bg-celeste w-[2px] h-[100px]"/>
         <div class="grid gap-3">
-            <Typography as="p" class="font-black w-fit bg-celeste py-1 px-3 place-self-start rounded-full">Impacto</Typography>
-            <Typography class="text-left text-sm">
+            <Typography as="p" class="font-black w-fit bg-celeste py-1 px-3 place-self-start rounded-xl text-xl">Impacto</Typography>
+            <Typography class="text-left font-light">
                 Gestionar hallazgos de manera oportuna. <br/>
                 Atender oportunamente las desviaciones  <br/>
                 e incumplimiento para subsanar los hallazgos <br/>
@@ -184,5 +192,5 @@ import spaceDiver from '@public/assets/space-diver.svg';
             </Typography>
         </div>
     </div>
-    <img src={spaceDiver.src} alt="Space diver diving into data" />
+    <img src={spaceDiver.src} alt="Space diver diving into data" class="w-[700px] mt-20" />
 </section>
