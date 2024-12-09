@@ -1,13 +1,12 @@
 ---
-import { Image } from "astro:assets";
-import payback from '@public/assets/payback.svg';
-import verification from '@public/assets/verification.svg';
+import payback from '@public/assets/payback.png';
+import verification from '@public/assets/verification.png';
 import peopleTriangle from '@public/assets/people-triangle.png';
 import commercialTitle from "@public/assets/commercial-title.svg";
-import telephone from '@public/assets/telephone.svg';
+import telephone from '@public/assets/telephone.png';
 import Typography from "../ui/Typography.astro";
-import manWithComputer from '@public/assets/man-with-computer.svg';
-import browser from '@public/assets/browser.svg';
+import manWithComputer from '@public/assets/man-with-computer.png';
+import browser from '@public/assets/browser.png';
 import MotionNumber from "../ui/MotionNumber";
 import dashedCurvedLine from '@public/assets/dashed-curved-line.svg';
 import dashedOrangeLine from '@public/assets/dashed-orange-line.svg';
@@ -25,7 +24,7 @@ import dashedBottomBlueLine from '@public/assets/dashed-bottom-blue-line.svg';
         </div>
         <div data-aos="fade-up" data-aos-delay="300" class="grid grid-cols-2 place-items-center">
             <div class="grid grid-cols-2 justify-items-center place-items-center">
-                <img src={telephone.src} alt="Telephone" />
+                <img src={telephone.src} alt="Telephone" class="w-[130px]"/>
                 <div class="grid gap-3">
                     <Typography class="font-light"> 
                         Habilitar la opción de solicitar <br/>
@@ -93,7 +92,7 @@ import dashedBottomBlueLine from '@public/assets/dashed-bottom-blue-line.svg';
         <img src={peopleTriangle.src} alt="Pleople triangle" />
     </div>
     <div data-aos="fade-right" class="relative" data-aos-delay="300">
-        <img src={browser.src} alt="Browser" />
+        <img src={browser.src} class="w-[200px]" alt="Browser" />
         <div class="grid">
             <Typography as="h1" class="text-yellow text-[96px]/[2.5rem] relative">
                 <MotionNumber from={40} to={95} duration={2} client:only />% <br/>
@@ -120,18 +119,18 @@ import dashedBottomBlueLine from '@public/assets/dashed-bottom-blue-line.svg';
 </section>
 <section data-aos="fade-left" data-aos-delay="600" class="container grid grid-cols-2 max-w-4xl place-items-center text-nowrap gap-8 mx-auto relative">
     <div class="grid place-items-center relative">
-        <img src={verification.src} alt="Verification layer" class="w-[200px] pl-7"/>
+        <img src={verification.src} alt="Verification layer" class="w-[200px] mb-8 pl-7"/>
         <Typography class="text-center font-light">
             Migración flujo de trabajo de <br/>
             Microcolsa a Docuware (Radicación, <br/>
             distribución y emisión de respuestas). <br/>
             <br/>
-            <span class="font-normal">Ahorro en horas hombre en <br/>
+            <span class="font-bold italic">Ahorro en horas hombre en <br/>
             proceso de distribución.</span>
         </Typography>
     </div>
     <div data-aos="fade-right" data-aos-delay="600" class="grid gap-10 place-items-center text-center">
-        <Typography as="h1" class="text-celeste text-2xl leading-snug font-light relative">
+        <Typography as="h1" class="text-celeste text-2xl/7 font-light relative">
             <span class="text-4xl font-bold">EFFIWORK</span> plataforma de <br/>
             <span class="text-orange font-bold text-4xl">optimización y flexibilidad</span> <br/>
             en radicación, expedición y envió de <br/>
@@ -157,7 +156,7 @@ import dashedBottomBlueLine from '@public/assets/dashed-bottom-blue-line.svg';
 </section>
 <section data-aos="fade-left" data-aos-delay="300" class="container grid place-items-center max-w-4xl text-nowrap mx-auto gap-6">
     <div class="flex relative">
-        <img src={payback.src} alt="Payback icon" class="absolute text-right w-[160px]"/>
+        <img src={payback.src} alt="Payback icon" class="absolute text-right w-[105px]"/>
         <Typography as="h1" class="text-orange text-6xl pl-[120px]">
             Pagos <br/>
             <span class="text-yellow">Parciales</span>
@@ -173,7 +172,7 @@ import dashedBottomBlueLine from '@public/assets/dashed-bottom-blue-line.svg';
     </Typography>
     <div data-aos="fade-right" data-aos-delay="300" class="grid grid-cols-2 gap-20 pt-3">
         <div>
-            <Typography as="p" class="font-black w-fit bg-yellow py-1 px-3 place-self-start rounded-full">Impacto</Typography>
+            <Typography as="p" class="font-black w-fit bg-yellow py-1 px-3 place-self-start rounded-full mb-2">Impacto</Typography>
             <Typography class="font-light">
                 Mejoras en tiempos de <br/>
                 operación y experiencia <br/>
